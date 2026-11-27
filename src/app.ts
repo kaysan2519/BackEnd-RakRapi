@@ -26,3 +26,5 @@ app.use("/api/toko", express.json({ limit: "16kb" }), tokoRouter);
 app.use("/api/dashboard", dashboardRouter);
 
 app.use(tanganiError);
+
+export default app;
