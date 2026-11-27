@@ -1,0 +1,30 @@
+{
+  "name": "rakrapi-backend",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.9.0 <23.0.0"
+  },
+  "scripts": {
+    "dev": "npm run build && npm start",
+    "build": "tsc",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "cek:aiven": "node --env-file=.env scripts/periksa-aiven.cjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.11.0",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "mysql2": "^3.15.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^22.0.0",
+    "typescript": "6.0.3"
+  }
+}
